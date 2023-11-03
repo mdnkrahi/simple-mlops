@@ -5,14 +5,14 @@ on:
      branches:
       - main
     paths:
-      - "simple-continuous-training/**"
+      - 'simple-continuous-training/**'
     
   pull_request:
      branches:
       - main
     paths:
-      - "simple-continuous-training/**"
-      - "tests/simple-continuous-training/**"
+      - 'simple-continuous-training/**'
+      - 'tests/simple-continuous-training/**'
   
 permissions:
   id-token: write
