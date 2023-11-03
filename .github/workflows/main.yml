@@ -2,11 +2,11 @@ name: deploy-continuous-training
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
     paths:
       - "simple-continuous-training/**"
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
     paths:
       - "simple-continuous-training/**"
       - "tests/simple-continuous-training/**"
