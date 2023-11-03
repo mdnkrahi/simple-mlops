@@ -1,8 +1,8 @@
-name: deploy-continuous-training
+name: workflow
 
 on:
   push:
-     branches:
+    branches:
       - main
     paths:
       - 'simple-continuous-training/**'
