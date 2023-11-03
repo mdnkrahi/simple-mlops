@@ -6,12 +6,18 @@ on:
       - main
     paths:
       - "simple-continuous-training/**"
+    
   pull_request:
-    branches: [ "main" ]
+     branches:
+      - main
     paths:
       - "simple-continuous-training/**"
       - "tests/simple-continuous-training/**"
   
+permissions:
+  id-token: write
+  contents: read
+
 
 jobs:
   deploy-continuous-training:
@@ -24,5 +30,5 @@ jobs:
         run: pip install pytest
       - name: Run tests CT
         run: just test-ct
-      # - name: deploy
-      #   run: cd simple-continuous-training && sh deploy.sh
+      - name: deploy
+        run: cd simple-continuous-training && sh deploy.sh
